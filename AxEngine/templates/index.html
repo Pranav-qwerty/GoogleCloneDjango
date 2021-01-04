@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      body{
+          background: url('/static/bg.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .logo {
+        width: 200px;
+        height: 100px;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 36vh 0;
+      }
+      input{
+        border-radius: 20px;
+        font-size: 20px;
+        height: 50px;
+        width: 371px;
+        padding-left: 10px;
+        outline: none;
+      }
+      button{
+        padding: 10px 38px;
+        border-radius: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="logo">Ax Engine</div>
+      <div class="inpquery">
+        <form method="GET" action="search">
+          <input type="text" autocomplete="off" name="query" id="" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
